@@ -209,7 +209,7 @@ img {
     font-size: 26px;
     font-weight: 900;
     text-transform: uppercase;
-    text-align: center;
+    text-align: right;
     background: linear-gradient(to right, #020914, #0B2247, #143B7C);
     -webkit-background-clip: text;
     background-clip: text;
