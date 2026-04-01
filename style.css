@@ -23,7 +23,7 @@ body {
     color: var(--white);
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
-    max-width: 400px;
+    max-width: 430px;
     max-height: 1px;
     margin: 0 auto;
 }
