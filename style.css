@@ -5,16 +5,16 @@
 }
 
 :root {
-    --bg-dark:        #0b1a2e;       /* тёмно-синий фон (блок 1 и 3) */
-    --bg-light:       #ffffff;       /* белый фон (блок 2) */
-    --bg-card-dark:   #0d1e32;       /* фон карточек на тёмном */
+    --bg-dark:        #0b1a2e;
+    --bg-light:       #ffffff;
+    --bg-card-dark:   #0d1e32;
     --blue:           #1e6aff;
     --blue-glow:      rgba(30, 106, 255, 0.35);
     --red:            #cc1500;
-    --white:          #ffffff;
+    --white: #ffffff;
     --black:          #111111;
     --muted:          #7a8fa6;
-    --card-border-light: #d0d8e4;    /* рамки карточек на светлом */
+    --card-border-light: #d0d8e4;
 }
 
 html { scroll-behavior: smooth; }
@@ -23,10 +23,16 @@ body {
     color: var(--white);
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
-    max-width: 430px;  /* ширина как у телефона */
+    max-width: 400px;
+    max-height: 1px;
     margin: 0 auto;
 }
 
+img {
+    pointer-events: none;
+    -webkit-user-drag: none;
+    user-select: none;
+}
 .wrap {
     max-width: 485px;
     margin: 0 auto;
@@ -38,23 +44,23 @@ body {
 
 .btn-cta {
     display: block;
-    width: 250px;
+    width: 270px;
 
-    padding: 16px 0;
-    margin-top: 24px;
+    padding: 30px 0;
+    margin-top: 26px;
 
     background: linear-gradient(to right, #a60303 0%, #de1717 50%, #630303 100%);
 
     color: var(--white);
-    font-family: 'Oswald', sans-serif;
-    font-size: 18px;
-    font-weight: 700;
+    font-family: 'Druk Cyr', sans-serif;
+    font-size: 16px;
+    font-weight: 795;
     letter-spacing: 0px;
     text-transform: uppercase;
     text-align: center;
 
     border: none;
-    border-radius: 6px;
+    border-radius: 10px;
     cursor: pointer;
 
     box-shadow: 0 4px 20px rgba(75, 0, 0, 0.6);
@@ -70,7 +76,7 @@ body {
 
 .btn-cta span {
     display: inline-block;
-    transform: scaleY(1.4);
+    transform: scaleY(2.2);
     transform-origin: center;
 }
 .btn-cta:active { transform: translateY(0); }
@@ -94,13 +100,13 @@ body {
 
 .hero__title {
     font-family: 'Oswald', sans-serif;
-    font-size: 80px;
+    font-size: 90px;
     font-weight: 700;
     text-transform: uppercase;
     line-height: 0.88;
     text-align: center;
     letter-spacing: -2px;
-    background: linear-gradient(to bottom, #ffffff, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+    background: linear-gradient(to bottom, #ffffff, rgba(255, 255, 255, 0.57), rgba(255, 255, 255, 0.11));
     -webkit-background-clip: text;
     background-clip: text;
 
@@ -113,24 +119,24 @@ body {
 
 .hero__sub {
     font-family: 'Oswald', sans-serif;
-    font-size:27px;
+    font-size:29px;
     font-weight: 700;
     text-transform: uppercase;
     text-align: center;
     color: var(--white);
-    margin-top: 10px;
+    margin-top: -10px;
     display: inline-block;
-    transform: scaleY(1.2);
+    transform: scaleY(1.6);
     transform-origin: top left;
 }
 
 .hero__badge {
     display: inline-block;
-    margin-top: 16px;
+    margin-top: 15px;
     padding: 5px 10px;
     border-radius: 0;
 
-    font-family: 'Oswald', sans-serif;
+    font-family: 'SF Pro Display', sans-serif;
     font-size: 18px;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -155,27 +161,27 @@ body {
 
 .hero__certificate {
     position: absolute;
-    left: 50%;
+    left: 4%;
     top: 0;
     transform: translateX(-50%);
     width: 320px;
-    height: auto;
+    height: 250px;
     z-index: 3;
 }
 
 .hero__clock {
     position: absolute;
     left: -20px;
-    bottom: -120px;
-    width: 130px;
+    bottom: -150px;
+    width: 155px;
     height: auto;
     z-index: 4;
 }
 
 .hero__bookt {
     position: absolute;
-    left: 76.8718%;
-    top: -120px;
+    right: -20px;
+    top: -115px;
     transform: translateX(-50%);
     width: 220px;
     height: auto;
@@ -185,7 +191,7 @@ body {
 .hero__bookb {
     position: absolute;
     right: -20px;
-    bottom: -150px;
+    bottom: -180px;
     width: 130px;
     height: auto;
     z-index: 6;
@@ -199,11 +205,11 @@ body {
 
 
 .learn__title {
-    font-family: 'Oswald', sans-serif;
-    font-size: 36px;
+    font-family: 'Druk Cyr', sans-serif;
+    font-size: 26px;
     font-weight: 900;
     text-transform: uppercase;
-    text-align: left;
+    text-align: center;
     background: linear-gradient(to right, #020914, #0B2247, #143B7C);
     -webkit-background-clip: text;
     background-clip: text;
@@ -215,7 +221,7 @@ body {
     margin-bottom: 20px;
 
     display: inline-block;
-    transform: scaleY(1.5);
+    transform: scaleY(2.6);
     transform-origin: top left;
 }
 
@@ -287,15 +293,17 @@ body {
 }
 
 .forwho__title {
-    font-family: 'Oswald', sans-serif;
-    font-size: 42px;
-    font-weight: 99999999;
+    font-family: 'Druk Cyr', sans-serif;
+    font-size: 32px;
+    font-weight: 780;
     text-transform: uppercase;
     text-align: center;
     color: var(--white);
     line-height: 1.2;
     margin-bottom: 24px;
     align-self: flex-start;
+    transform: scaleY(1.7);
+    transform-origin: top left;
 }
 
 .forwho__cards {
@@ -303,6 +311,7 @@ body {
     flex-direction: column;
     gap: 12px;
     width: 100%;
+    margin-top: 45px;
 }
 
 .forwho-card {

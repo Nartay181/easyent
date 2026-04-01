@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
@@ -18,20 +19,20 @@
       <img src="img/block1logo.png" alt="EasyENT">
     </div>
 
-    <h1 class="hero__title">ЕНТ 2027</h1>
-    <p class="hero__sub">ВЕБИНАР КАК НАБРАТЬ 130+</p>
+    <h1 class="hero__title" data-aos="fade-right">ЕНТ 2027</h1>
+    <p class="hero__sub" data-aos="fade-left">ВЕБИНАР КАК НАБРАТЬ 130+</p>
 
-    <div class="hero__badge">ДЛЯ 10 КЛАССОВ</div>
+    <div class="hero__badge" data-aos="fade-right">ДЛЯ 10 КЛАССОВ</div>
 
 
     <div class="hero__visual">
-      <img src="img/block1certificate.png" alt=""  class="hero__certificate">
-      <img src="img/block1clock.png" alt=""  class="hero__clock">
-      <img src="img/block1book-top.png"  alt=""  class="hero__bookt">
-      <img src="img/block1book-bottom.png" alt=""  class="hero__bookb">
+      <img src="img/block1certificate.png" alt=""  class="hero__certificate" data-aos="fade-right">
+      <img src="img/block1clock.png" alt=""  class="hero__clock" data-aos="fade-right">
+      <img src="img/block1book-top.png"  alt=""  class="hero__bookt" data-aos="fade-left">
+      <img src="img/block1book-bottom.png" alt=""  class="hero__bookb" data-aos="fade-left">
     </div>
 
-    <button class="btn-cta"><span>Участвовать бесплатно</span></button>
+    <button class="btn-cta js-open-modal"><span>Участвовать бесплатно</span></button>
 
   </div>
 </section>
@@ -44,26 +45,26 @@
 
     <div class="learn__cards">
 
-      <div class="notebook">
+      <div class="notebook" data-aos="fade-right">
         <img src="img/block2notebook.png" alt="Балл на ЕНТ">
       </div>
 
-      <div class="learn-card">
+      <div class="learn-card" data-aos="fade-left">
         <img src="img/block2laptop.png" alt="Формат ЕНТ">
       </div>
 
-      <div class="learn-card">
+      <div class="learn-card" data-aos="fade-right">
         <img src="img/block2settings.png" alt="Гранты">
       </div>
 
-      <div class="learn-card">
+      <div class="learn-card" data-aos="fade-left">
         <img src="img/block2score130.png" alt="130+">
         <img src="img/block2text130.png" alt="130+">
       </div>
 
     </div>
 
-    <div class="raffle">
+    <div class="raffle" data-aos="fade-right">
       <img src="img/block2draw.png" alt="Розыгрыш">
     </div>
 
@@ -81,24 +82,24 @@
     <div class="forwho__cards">
 
 
-      <div class="forwho-card">
+      <div class="forwho-card" data-aos="fade-right" data-aos-delay="2200" >
         <img src="img/block31.png" alt="">
       </div>
 
-      <div class="forwho-card">
+      <div class="forwho-card" data-aos="fade-left" data-aos-delay="2400">
         <img src="img/block32.png" alt="">
       </div>
 
-      <div class="forwho-card">
+      <div class="forwho-card" data-aos="fade-right" data-aos-delay="2600">
         <img src="img/block33.png" alt="">
       </div>
 
-      <div class="forwho-card">
+      <div class="forwho-card" data-aos="fade-left" data-aos-delay="2800">
         <img src="img/block34.png" alt="">
       </div>
 
       <div class="forwho-card">
-        <img src="img/block35.png" alt="">
+        <img src="img/block35.png" alt="" data-aos="fade-right" data-aos-delay="3000">
       </div>
 
     </div>
@@ -132,5 +133,9 @@
 
 
 <script src="script.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>
